@@ -1,5 +1,5 @@
 export default function getFligts(API_KEY: string, AIRPORT_CODE: string) {
-  return fetch (`http://api.aviationstack.com/v1/flights?access_key=${API_KEY}&arr_iata=${AIRPORT_CODE}`)
+  return fetch (`https://api.aviationstack.com/v1/flights?access_key=${API_KEY}&arr_iata=${AIRPORT_CODE}`)
     .then((r) => {
       if (r.ok) {
         return r.json()
