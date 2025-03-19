@@ -54,5 +54,5 @@ export interface Flight {
     icao: string;
     icao24: string;
   } | null;
-  live?: any | null;
+  live?: boolean | null;
 }

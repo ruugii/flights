@@ -42,9 +42,7 @@ export default function Flights() {
         }
         setFlights(fligtAux)
       })
-
-
-  }, [])
+  }, [API_KEY, CODE, maxFlights])
 
   return (
     <table className="table-fixed border-collapse border-2 border-white w-full">
